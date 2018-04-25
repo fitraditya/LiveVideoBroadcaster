@@ -45,6 +45,12 @@ public interface ILiveVideoBroadcaster {
     void openCamera(int cameraId);
 
     /**
+     * Releases camera
+     *
+     */
+    void releaseCamera();
+
+    /**
      * Changes the camera,
      * if active camera is back camera, releases the back camera and
      * open the front camera, it behaves same with the front camera
