@@ -506,7 +506,7 @@ public class LiveVideoBroadcaster extends Service implements ILiveVideoBroadcast
         }.execute(currentCameraId);
     }
 
-    private void releaseCamera() {
+    public void releaseCamera() {
         try {
             if (sCameraProxy != null) {
                 System.out.println("releaseCamera stop preview");
